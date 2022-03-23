@@ -1,38 +1,31 @@
-.img{
-    width: 100%;
-    height:75%;
-    img{
-        width: 100%;
-        height: 100%;
-         object-fit:cover;
-    }
-}
+@import "../../color.scss";
 
-.personCart{
-    position: relative;
-    height: 430px;
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin:0 10px 10px;
-    padding-bottom: 10px;
-    overflow: hidden;
-    border: 1px solid #434343;
-    border-radius: 15px;
-    color: white;
-    
-    
-    h3{
-        font-size: 1rem;
-        text-align: center;
+.personCart {
+  position: relative;
+  height: 430px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid $color2;
+  border-radius: 15px;
+  color: $color3;
+  .img {
+    width: 100%;
+    height: 75%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    svg{
-        position: absolute;
-        bottom:85px;
-        right: 5px;
-        background-color:transparent;
-         user-select: none;
-    }
+  }
+
+  h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
 }

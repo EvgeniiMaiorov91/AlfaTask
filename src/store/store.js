@@ -3,6 +3,6 @@ import personsReducer from './personsSlice'
 
 export const store = configureStore({
   reducer: {
-      persons:personsReducer
+      persons : personsReducer
   },
 })

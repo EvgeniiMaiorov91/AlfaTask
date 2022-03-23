@@ -48,14 +48,15 @@ export const personsSlice = createSlice({
             state.loader = action.payload
         },
         removePerson: (state, action) => {
-            state.persons.filter(p => p.id !== action.payload)
+            let index = state.persons.findIndex(p => p.id === action.payload);
+            state.persons.splice(index, 1)
         },
         changeLike: (state, action) => {
             let index = state.persons.findIndex(p => p.id === action.payload.id);
             state.persons[index].like = !action.payload.like;
         },
         changeFavorites: (state) => {
-            let favorites = state.persons.filter( p => p.like === true);
+            let favorites = state.persons.filter(p => p.like === true);
             state.favorites = favorites
         }
 

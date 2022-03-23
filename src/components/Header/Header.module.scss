@@ -1,9 +1,11 @@
+@import "../../color.scss";
+
 .Header {
   display: flex;
   padding: 10px;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: $color3;
   position: relative;
   padding-bottom: 30px;
 
@@ -16,12 +18,11 @@
     width: 150px;
     height: 60px;
     font-size: 1.5rem;
-    background: rgb(230, 220, 220);
     border-radius: 15px;
     position: absolute;
     border: none;
-    background-color: #434343;
-    color: white;
+    background-color: $color2;
+    color: $color3;
     right: 100px;
   }
 }
