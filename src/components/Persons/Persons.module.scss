@@ -9,6 +9,7 @@
 }
 
 .personCart{
+    position: relative;
     height: 430px;
     width: 240px;
     display: flex;
@@ -22,9 +23,16 @@
     border-radius: 15px;
     color: white;
     
+    
     h3{
         font-size: 1rem;
         text-align: center;
     }
-    
+    svg{
+        position: absolute;
+        bottom:85px;
+        right: 5px;
+        background-color:transparent;
+         user-select: none;
+    }
 }

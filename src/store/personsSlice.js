@@ -15,7 +15,7 @@ export const getPersons = createAsyncThunk(
                 if (!data.length) {
                     throw errorText;
                 } else {
-                    for(let i = 0; i < data.length; i++){
+                    for (let i = 0; i < data.length; i++) {
                         data[i].like = false;
                     }
                     return data;
@@ -50,6 +50,14 @@ export const personsSlice = createSlice({
         removePerson: (state, action) => {
             state.persons.filter(p => p.id !== action.payload)
         },
+        changeLike: (state, action) => {
+            let index = state.persons.findIndex(p => p.id === action.payload.id);
+            state.persons[index].like = !action.payload.like;
+        },
+        changeFavorites: (state) => {
+            let favorites = state.persons.filter( p => p.like === true);
+            state.favorites = favorites
+        }
 
     },
     extraReducers: {
@@ -70,7 +78,9 @@ export const personsSlice = createSlice({
 export const {
     changePage,
     loading,
-    removePerson
+    removePerson,
+    changeLike,
+    changeFavorites
 } = personsSlice.actions
 
 export default personsSlice.reducer
