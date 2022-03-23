@@ -15,6 +15,9 @@ export const getPersons = createAsyncThunk(
                 if (!data.length) {
                     throw errorText;
                 } else {
+                    for(let i = 0; i < data.length; i++){
+                        data[i].like = false;
+                    }
                     return data;
                 }
             })
