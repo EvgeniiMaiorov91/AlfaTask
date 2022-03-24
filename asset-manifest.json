@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AlfaTask/static/css/main.e944970a.css",
+    "main.js": "/AlfaTask/static/js/main.e6b9aa01.js",
+    "index.html": "/AlfaTask/index.html",
+    "main.e944970a.css.map": "/AlfaTask/static/css/main.e944970a.css.map",
+    "main.e6b9aa01.js.map": "/AlfaTask/static/js/main.e6b9aa01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e944970a.css",
+    "static/js/main.e6b9aa01.js"
+  ]
+}
