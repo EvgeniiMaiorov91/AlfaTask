@@ -1,0 +1,14 @@
+@import "../../color.scss";
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 131px);
+  overflow-y: scroll;
+
+  h1 {
+    color: $color3;
+    width: 420px;
+    margin: 0 auto;
+  }
+}
