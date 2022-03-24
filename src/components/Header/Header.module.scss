@@ -1,0 +1,28 @@
+@import "../../color.scss";
+
+.Header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  color: $color3;
+  position: relative;
+  padding-bottom: 30px;
+
+  h1 {
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+  }
+  button {
+    width: 150px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    position: absolute;
+    border: none;
+    background-color: $color2;
+    color: $color3;
+    right: 100px;
+  }
+}
